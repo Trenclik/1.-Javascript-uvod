@@ -71,6 +71,19 @@ function Add(){
         // Jednodušeji vám proměné output za Vás vypíše document.getElementByID("output")
     */
 
+    /*
+        To co píšeme za proměnou či getElementByID zpřesňujeme co chceme od js za přesnější příkaz.
+
+        innerHTML - Funguje u párových tagu, znamená výběr mezi contentu v elementu (můžeme jí budto nahrátn do proměné v js, nebo jí přepsat pomocí js).
+    */
+
+    /*
+        Podívejte se důkladně na to, že zde není + před =. To znamená že se bude hodnota pokaždé přepisovat v html!
+        output.innerHTML = i + ". " + input.value + "<br>";
+
+        Pokud přidáme před rovná se plus, hodnoty se budou přidávat.
+    */
+
     // Zde jsme využili proměné i, který nám následně čísluje kolíkáty je to příspěvek
     output.innerHTML += i + ". " + input.value + "<br>"; // Řetězec zde spojujeme +, můžeme takto combinovat různé datové typy. Též můžete vypisovat i elementy jako je například <br>.
 
