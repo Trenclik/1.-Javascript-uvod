@@ -99,3 +99,10 @@ function Add(){
     
 }
 
+let imagePaths = [""];
+console.log(imagePaths);
+let currentIndex = 0;
+function swap() {
+  currentIndex = (currentIndex + 1) % images.length; // Loop through images
+  document.getElementById('myImage').src = images[currentIndex];
+}

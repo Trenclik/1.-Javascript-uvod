@@ -7,6 +7,7 @@
 
     <!-- Odkazujeme na js -->
     <script src="/js/script.js"></script>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <header>
@@ -18,13 +19,11 @@
             <label for="input">Zadej text</label>
             <input type="text" id="input">
             <!-- onclikc musí mít název funkce, který odpovídá funkci v js, který je připojený k html. Pozor je to key sensitivity, takže rozlišuje malá a velká písmena -->
-            <button onclick="Add()">Přidej</button> <!-- oncliock - Událost (event), která spouští funkci podle toho, pokud se na element klikne -->
+            <button onclick="swap()">obrazek</button> <!-- oncliock - Událost (event), která spouští funkci podle toho, pokud se na element klikne -->
         </section>
         <section>
             <!-- Zde odkazujeme na <p> pomocá id, zde se budou vypisovat text, který vložíme pomocí js přes input -->
-            <p id="output">
-
-            </p>
+            <img src="" id="myImage">
         </section>
     </main>
     <footer>
